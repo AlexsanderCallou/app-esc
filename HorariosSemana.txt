@@ -21,5 +21,8 @@ Marcos e Allysson, iniciar a "estrategia de codificação"
 Alexsander, revisar o documento de arquitetura + visões.
 
 Entregar Domingo dia 07/03, as 9hras am, na casa de Alexsander.
+OK
+__________________________________________________________
+__________________________________________________________
 
-__________________________________________________________ 
+Incio de desenvolvimento... 
