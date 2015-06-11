@@ -72,6 +72,27 @@
                 <?php } ?>
             </tbody>
         </table>
+
+
+<?php
+//php do json
+
+$sth = mysql_query("SELECT titulo,conteudo,data,categoria FROM cadastro");
+$rows = array();
+
+while($r = mysql_fetch_assoc($sth)) {
+    $rows[] = $r;
+    
+}
+print json_encode($rows);
+
+$fi=fopen($_POST ['json']."cad.json", "a") or die("erro");
+
+fwrite($fi, json_encode($rows));
+
+fclose($fi);
+
+?>
     </body>
 </html>
 <?php $con->disconnect(); // fecha conexao com o banco ?>
