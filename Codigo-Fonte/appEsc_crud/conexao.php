@@ -10,7 +10,7 @@ class conexao
     private $db_host = 'localhost'; // servidor
     private $db_user = 'root'; // usuario do banco
     private $db_pass = ''; // senha do usuario do banco
-    private $db_name = 'cadastroJson'; // nome do banco
+    private $db_name = 'appEsc'; // nome do banco
 
     private $con = false;
 

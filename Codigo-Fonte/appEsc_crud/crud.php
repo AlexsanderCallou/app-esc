@@ -92,7 +92,7 @@
 		}
 	  }else{
 			print "<center>Registro Não encontrado!<br><a href='index.php'>Voltar ao Menu</a></center>";
-	  }
+	  } 
 	}  	
 		
  }  		

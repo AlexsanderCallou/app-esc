@@ -1,0 +1,23 @@
+#formCadastro{
+
+
+	position:relative;
+    left:37%;
+    top:29%;
+    width:320px;
+    height:270px;
+
+
+}
+
+#tableVisualizar{
+	
+	border: 0;
+	background: #eee; 
+	position:relative;
+    left:37%;
+    top:29%;
+    width:320px;
+    height:270px;
+
+}
