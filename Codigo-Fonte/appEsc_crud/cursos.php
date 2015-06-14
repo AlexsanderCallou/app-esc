@@ -119,6 +119,7 @@ require_once 'crud.php';
                         <?php } ?>
                     </tbody>
                 </table>
+                <br>
                 <a href="wsCursos.php" id="formCadastro">gerar json</a>
             </body>
             </html>
