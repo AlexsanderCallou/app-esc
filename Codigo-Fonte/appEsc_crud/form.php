@@ -5,6 +5,8 @@
         <title></title>
     </head>
     <body>
+       
+
         <form id="formCadastro" action="" method="post"><!--   formulario carrega a si mesmo com o action vazio  -->
             <div id="campos">
             <label>Titulo:</label>

@@ -118,5 +118,6 @@ require_once 'form.php';
                 <?php } ?>
          </tbody>
 </table>
+<a href="wsAprovados.php" id="formCadastro">gerar json</a>
 </body>
 </html>
