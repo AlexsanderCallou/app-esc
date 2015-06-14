@@ -13,7 +13,7 @@ while($r = mysql_fetch_assoc($sth)) {
     $rows[] = $r;
     
 }
-print json_encode( array ("produtos" => $rows));
+print json_encode( array ("cursos" => $rows));
 
 
 

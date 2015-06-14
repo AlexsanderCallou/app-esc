@@ -118,5 +118,6 @@ require_once 'form.php';
                 <?php } ?>
          </tbody>
 </table>
+ <a href="wsturmas.php" id="formCadastro">gerar json</a>
 </body>
 </html>

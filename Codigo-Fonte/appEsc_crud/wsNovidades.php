@@ -6,14 +6,14 @@
     $con->connect(); // abre conexao com o banco
 
 
-$sth = mysql_query("SELECT titulo,data,urlimg,conteudo,urllink,categoria FROM cursos");
+$sth = mysql_query("SELECT titulo,data,urlimg,conteudo,urllink,categoria FROM novidades");
 $rows = array();
 
 while($r = mysql_fetch_assoc($sth)) {
     $rows[] = $r;
     
 }
-print json_encode( array ("produtos" => $rows));
+print json_encode( array ("novidades" => $rows));
 
 
 
