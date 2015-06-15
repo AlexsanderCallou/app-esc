@@ -21,7 +21,7 @@ function json(){
                 this.retorno += '<p>Categoria: ' + data[i].categoria + '</p><br/><hr/><br/>';
 			}
 
-			$('#resultado').html(this.retorno);
+			$('#resultadoEventos').html(this.retorno);
 		});
 
 	}

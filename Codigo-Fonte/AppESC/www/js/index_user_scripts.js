@@ -161,18 +161,10 @@
     });
     
         /* listitem  Horários */
-    $(document).on("click", ".uib_w_11", function(evt)
-    {
-         activate_subpage("#horarios"); 
-        uib_sb.close_all_sidebars();
-    });
+    
     
         /* listitem  Turmas */
-    $(document).on("click", ".uib_w_12", function(evt)
-    {
-         activate_subpage("#turmas"); 
-        uib_sb.close_all_sidebars();
-    });
+    
     
         /* listitem  Editais */
     $(document).on("click", ".uib_w_13", function(evt)
@@ -194,6 +186,20 @@
     {
         /* your code goes here */ 
         navigator.app.exitApp();
+    });
+    
+        /* listitem  Pré-Vestibular */
+    $(document).on("click", ".uib_w_12", function(evt)
+    {
+         activate_subpage("#pre-vestibular"); 
+        uib_sb.close_all_sidebars();
+    });
+    
+        /* listitem  Horários */
+    $(document).on("click", ".uib_w_11", function(evt)
+    {
+         activate_subpage("#horarios");
+        uib_sb.close_all_sidebars();
     });
     
     }

@@ -6,16 +6,44 @@
   -->
 
     <head>
-        <!--Script para ler o arquivo JSON-->
+        <!--Script para ler o arquivo JSON CURSOS-->
         <script type="text/javascript" src="http://www.google.com/jsapi"></script>
         <script type="text/javascript">
             google.load("jquery", "1.3.2", {uncompressed:true});
         </script>
         <script type="text/javascript" src="js/cursos.js"></script>
-        <script type="text/javascript" src="js/aprovados.js"></script>
-        <script type="text/javascript" src="js/editais.js"></script>
-        <script type="text/javascript" src="js/eventos.js"></script>
+        <!--Final da referencia do script-->
+
+        <!--Script para ler o arquivo JSON NOVIDADES-->
+        <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+        <script type="text/javascript">
+            google.load("jquery", "1.3.2", {uncompressed:true});
+        </script>
         <script type="text/javascript" src="js/novidades.js"></script>
+        <!--Final da referencia do script-->
+
+        <!--Script para ler o arquivo JSON APROVADOS-->
+        <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+        <script type="text/javascript">
+            google.load("jquery", "1.3.2", {uncompressed:true});
+        </script>
+        <script type="text/javascript" src="js/aprovados.js"></script>
+        <!--Final da referencia do script-->
+
+        <!--Script para ler o arquivo JSON EDITAIS-->
+        <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+        <script type="text/javascript">
+            google.load("jquery", "1.3.2", {uncompressed:true});
+        </script>
+        <script type="text/javascript" src="js/editais.js"></script>
+        <!--Final da referencia do script-->
+
+        <!--Script para ler o arquivo JSON EVENTOS-->
+        <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+        <script type="text/javascript">
+            google.load("jquery", "1.3.2", {uncompressed:true});
+        </script>
+        <script type="text/javascript" src="js/eventos.js"></script>
         <!--Final da referencia do script-->
 
         <link rel="stylesheet" type="text/css" href="media_button_bar/css/media_button_bar.css">
@@ -110,25 +138,8 @@
         <div id="content" class="uwrap">
             <div class="upage panel" id="mainpage" data-header="cabecalho" data-footer="none">
                 <div class="upage-outer">
-                    <div class="upage-content content-area vertical-col" id="inicio">
 
-                        <div class="grid grid-pad urow uib_row_1 row-height-1" data-uib="layout/row" data-ver="0">
-                            <div class="col uib_col_1 col-0_12-12" data-uib="layout/col" data-ver="0">
-                                <div class="widget-container content-area vertical-col">
-
-                                    <div class="widget uib_w_3 d-margins" data-uib="media/text" data-ver="0">
-                                        <div class="widget-container left-receptacle"></div>
-                                        <div class="widget-container right-receptacle"></div>
-                                        <div>
-                                            <p>Esta é a tela inicial do aplicativo.</p>
-                                        </div>
-                                    </div><span class="uib_shim"></span>
-                                </div>
-                            </div>
-                            <span class="uib_shim"></span>
-                        </div>
-                    </div>
-                    <div class="inner-element uib_w_2 uib_sidebar leftbar bar-bg thumb-bg bar-gutter swipe" data-uib="layout/left_sidebar" data-ver="1" data-anim="{'style':'overlap', 'v':200, 'side':'left', 'dur':200}">
+                    <div class="inner-element uib_w_2 uib_sidebar leftbar bar-bg thumb-bg bar-gutter swipe fixed" data-uib="layout/left_sidebar" data-ver="1" data-anim="{'style':'overlap', 'v':200, 'side':'left', 'dur':200}">
                         <div class="sidebar-content content-area vertical-col">
 
                             <ul class="list widget uib_w_5 d-margins" data-uib="app_framework/listview" data-ver="1">
@@ -144,7 +155,7 @@
                                 </li>
                                 <li class="widget uib_w_11" data-uib="app_framework/listitem" data-ver="1"><a class="icon clock">Horários</a>
                                 </li>
-                                <li class="widget uib_w_12" data-uib="app_framework/listitem" data-ver="1"><a class="icon user">Turmas</a>
+                                <li class="widget uib_w_12" data-uib="app_framework/listitem" data-ver="1"><a class="icon user">Pré-Vestibular</a>
                                 </li>
                                 <li class="widget uib_w_13" data-uib="app_framework/listitem" data-ver="1"><a class="icon stack">Editais</a>
                                 </li>
@@ -155,94 +166,120 @@
                         </div>
                     </div>
                 </div>
-
-                <div id="cursos" class="upage-content vertical-col hidden">
-                    <div class="grid grid-pad urow uib_row_1 row-height-1" data-uib="layout/row" data-ver="0">
-                        <div class="col uib_col_1 col-0_12-12" data-uib="layout/col" data-ver="0">
-                            <div class="widget-container content-area vertical-col">
-
-                                <div class="widget uib_w_3 d-margins" data-uib="media/text" data-ver="0">
-                                    <div class="widget-container left-receptacle"></div>
-                                    <div class="widget-container right-receptacle"></div>
-                                    <div>
-                                        <p>Cursos</p>
-                                        <br>
-                                    </div>
-                                    <div id="resultado">
-                                    </div>
-                                </div><span class="uib_shim"></span>
-                            </div>
-                        </div>
-                        <span class="uib_shim"></span>
-                    </div>
-                </div>
+                <!--PAGINA DE NOVIDADES-->
                 <div id="novidades" class="upage-content vertical-col hidden">
                     <div class="widget uib_w_10 d-margins" data-uib="media/text" data-ver="0">
                         <div class="widget-container left-receptacle"></div>
                         <div class="widget-container right-receptacle"></div>
                         <div>
                             <p>Novidades</p>
-                            </div>
-                                <div id="resultadoNovidades">
-                                </div>
+                        </div>
+                        <div id="resultadoNovidades">
                         </div>
                     </div>
                 </div>
+                <!--FIM DA PAGINA DE NOVIDADES-->
+
+                <!--PAGINA DE CURSOS-->
+                <div id="cursos" class="upage-content vertical-col hidden">
+                    <div class="widget uib_w_20 d-margins" data-uib="media/text" data-ver="0">
+                        <div class="widget-container left-receptacle"></div>
+                        <div class="widget-container right-receptacle"></div>
+                        <div>
+                            <p>Cursos</p>
+                        </div>
+                        <div id="resultado">
+                        </div>
+                    </div>
+                </div>
+                <!--FIM DA PAGINA DE CURSOS-->
+
+                <!--PAGINA DE APROVADOS-->
                 <div id="aprovados" class="upage-content vertical-col hidden">
-                    <div class="widget uib_w_11 d-margins" data-uib="media/text" data-ver="0">
+                    <div class="widget uib_w_21 d-margins" data-uib="media/text" data-ver="0">
                         <div class="widget-container left-receptacle"></div>
                         <div class="widget-container right-receptacle"></div>
                         <div>
                             <p>Aprovados</p>
-                            </div>
-                                    <div id="resultadoAprovados">
-                                    </div>
+                        </div>
+                        <div id="resultadoAprovados">
                         </div>
                     </div>
                 </div>
-                <div id="eventos" class="upage-content vertical-col hidden">
-                    <div class="widget uib_w_12 d-margins" data-uib="media/text" data-ver="0">
-                        <div class="widget-container left-receptacle"></div>
-                        <div class="widget-container right-receptacle"></div>
-                        <div>
-                            <p>Eventos</p>
-                            </div>
-                                    <div id="resultadoEventos">
-                                    </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="horarios" class="upage-content vertical-col hidden">
-                    <div class="widget uib_w_13 d-margins" data-uib="media/text" data-ver="0">
-                        <div class="widget-container left-receptacle"></div>
-                        <div class="widget-container right-receptacle"></div>
-                        <div>
-                            <p>Horários</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="turmas" class="upage-content vertical-col hidden">
-                    <div class="widget uib_w_14 d-margins" data-uib="media/text" data-ver="0">
-                        <div class="widget-container left-receptacle"></div>
-                        <div class="widget-container right-receptacle"></div>
-                        <div>
-                            <p>Turmas</p>
-                        </div>
-                    </div>
-                </div>
+                <!--FIM DA PAGINA DE APROVADOS-->
+
+                <!--PAGINA DE EDITAIS-->
                 <div id="editais" class="upage-content vertical-col hidden">
-                    <div class="widget uib_w_15 d-margins" data-uib="media/text" data-ver="0">
+                    <div class="widget uib_w_22 d-margins" data-uib="media/text" data-ver="0">
                         <div class="widget-container left-receptacle"></div>
                         <div class="widget-container right-receptacle"></div>
                         <div>
                             <p>Editais</p>
-                            </div>
-                                    <div id="resultadoEditais">
-                                    </div>
+                        </div>
+                        <div id="resultadoEditais">
                         </div>
                     </div>
                 </div>
+                <!--FIM DA PAGINA DE EDITAIS-->
+
+                <!--PAGINA DE EVENTOS-->
+                <div id="eventos" class="upage-content vertical-col hidden">
+                    <div class="widget uib_w_23 d-margins" data-uib="media/text" data-ver="0">
+                        <div class="widget-container left-receptacle"></div>
+                        <div class="widget-container right-receptacle"></div>
+                        <div>
+                            <p>Eventos</p>
+                        </div>
+                        <div id="resultadoEventos">
+                        </div>
+                    </div>
+                </div>
+                <!--FIM DA PAGINA DE EVENTOS-->
+
+                <!--PAGINA DE HORARIOS-->
+                <div id="horarios" class="upage-content vertical-col hidden">
+                    <div class="widget uib_w_25 d-margins" data-uib="media/text" data-ver="0">
+                        <div class="widget-container left-receptacle"></div>
+                        <div class="widget-container right-receptacle"></div>
+                        <div>
+                            <img id="imagem" src="images/horarios.png">
+                        </div>
+                    </div>
+                </div>
+                <!--FIM DA PAGINA DE HORARIOS-->
+
+                <!--PAGINA DE PRÉ-VESTIBULAR-->
+                <div id="pre-vestibular" class="upage-content vertical-col hidden">
+                    <div class="widget uib_w_24 d-margins" data-uib="media/text" data-ver="0">
+                        <div class="widget-container left-receptacle"></div>
+                        <div class="widget-container right-receptacle"></div>
+                        <div>
+                            <h2>Pré-Vestibular</h2>
+                            <p></p>
+                            <h3>Equipe de professores</h3>
+                            <p></p>
+                            <p><strong>Português:</strong> Ana Paula Lira</p>
+                            <p><strong>Física: </strong>Jorge Luís / Romeu Oliveira</p>
+                            <p><strong>Redação: </strong>Alisson Almeida / Socorro Cavalachy / Flávio Queiróz</p>
+                            <p><strong>Literatura: </strong>Eveline Graciano / Elvis Pinheiro / Marcos Cláudio</p>
+                            <p><strong>Atualidades: </strong>Cícero Baratta</p>
+                            <p><strong>Inglês: </strong>Nágella Bannet / Cristovão Maia Filho</p>
+                            <p><strong>Espanhol: </strong>Mary Nunes</p>
+                            <p><strong>Geografia: </strong>Regiopidio Lacerda / Noberto de Souza</p>
+                            <p><strong>História: </strong>Cícero Baratta / Hugo Sobreira</p>
+                            <p><strong>Química: </strong>Alex Feitosa / Fernando Fernandes / Yllyara Brasil</p>
+                            <p><strong>Matemática: </strong>Alecson Macedo / Zildembergue de Sá / Salomão Ribeiro</p>
+                            <p><strong>Biologia: </strong>Bruno Morais / Carlos Tavares / Victor Lacerda / Jordanna Almeida</p>
+                            <p><strong>Filosofia | Sociologia:</strong> Edivan Bezerra</p>
+                            <br>
+                            <h2>Pré-Matricula</h2>
+                            <p><a target="_blank" href="http://www.escconsultoria.com.br/pre-matricula.php">Clique aqui para fazer sua pré-matricula</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!--FIM DA PAGINA DE PRÉ-VESTIBULAR-->
+
             </div>
         </div>
         <script src="js/jquery.plugin.pullToRefresh.js"></script>

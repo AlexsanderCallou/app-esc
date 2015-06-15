@@ -8,7 +8,7 @@ function json(){
 		$('#resultadoNovidades').html('Carregando dados...');
 
 		// Estrutura de resultado.
-		$.getJSON('http://marcosmatiasti.atspace.cc/CRUD/jsons/cadCursos.json', function(data){
+		$.getJSON('http://marcosmatiasti.atspace.cc/CRUD/jsons/cadNovidades.json', function(data){
 			this.qtd = data.length;
 			this.retorno = '';
 
@@ -21,7 +21,7 @@ function json(){
                 this.retorno += '<p>Categoria: ' + data[i].categoria + '</p><br/><hr/><br/>';
 			}
 
-			$('#resultado').html(this.retorno);
+			$('#resultadoNovidades').html(this.retorno);
 		});
 
 	}
