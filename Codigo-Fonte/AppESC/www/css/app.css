@@ -38,3 +38,7 @@ body {
     background: white ;
     color: black ;
 }
+#imagem{
+   width: 95%;
+    height: auto;
+}

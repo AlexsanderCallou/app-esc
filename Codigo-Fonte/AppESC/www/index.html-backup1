@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link rel="stylesheet" type="text/css" href="ratchet/css/ratchet.min.css">
+    <link rel="stylesheet" type="text/css" href="css/index_main.less.css" class="main-less">
+    <link rel="stylesheet" type="text/css" href="media_button_bar/css/media_button_bar.css">
+    <link rel="stylesheet" type="text/css" href="app_framework/2.1/css/icons.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
+    <script src="intelxdk.js"></script>
+    <script src="cordova.js"></script>
+    <script src="xhr.js"></script>
+    <script src="xdk/init-dev.js"></script>
+    <script type="application/javascript" src="lib/jquery.min.js"></script>
+    <script type="application/javascript" src="ratchet/js/ratchet.min.js"></script>
+    <script type="application/javascript" src="sidebar/js/hammer.js"></script>
+    <script type="application/javascript" src="sidebar/js/jquery.hammer.js"></script>
+    <script type="application/javascript" src="sidebar/js/swipe-hammer.js"></script>
+    <script type="application/javascript" src="sidebar/js/sidebar.js"></script>
+    <script type="application/javascript" src="http://www.google.com/jsapi"></script>
+    <script type="application/javascript" src="js/cursos.js"></script>
+    <script type="application/javascript" src="js/app.js"></script>
+    <script type="application/javascript" src="js/init-app.js"></script>
+    <script type="application/javascript" src="js/index_user_scripts.js"></script>
+    <script type="application/javascript" src="xdk/ad/af_subpage.js"></script>
+    <script type="application/javascript" src="app_framework/themeRelease.js"></script>
+  </head>
+
+  <body>
+    <div class="upage" id="mainpage">
+      <div class="upage-outer">
+        <header class="bar bar-nav inner-element uib_w_1" data-uib="ratchet/title_bar" data-ver="0" id="cabecalho">
+          <div class="widget-container content-area horiz-area wrapping-col left pull-left"><a class="btn widget uib_w_4 btn-default d-margins" data-uib="ratchet/button" data-ver="0"><span class="icon plus button-icon-left" data-position="left"></span>Menu</a><a class="btn widget uib_w_16 btn-default d-margins" data-uib="ratchet/button"
+            data-ver="0"><span class="icon close button-icon-left" data-position="left"></span>Sair</a>
+          </div>
+          <div class="widget-container content-area horiz-area wrapping-col right pull-right"></div> <a><h1 class="title">Label</h1></a>
+        </header>
+        <div class="upage-content ac0 content-area vertical-col left" style="top: 44px;">
+          <div class="grid grid-pad urow uib_row_1 row-height-1" data-uib="layout/row" data-ver="0">
+            <div class="col uib_col_1 col-0_12-12" data-uib="layout/col" data-ver="0">
+              <div class="widget-container content-area vertical-col left">
+
+                <div class="widget uib_w_3 d-margins" data-uib="media/text" data-ver="0">
+                  <div class="widget-container left-receptacle"></div>
+                  <div class="widget-container right-receptacle"></div>
+                  <div>
+                    <p>&nbsp;</p>
+                  </div>
+                </div><span class="uib_shim"></span>
+              </div>
+            </div>
+            <span class="uib_shim"></span>
+          </div>
+        </div>
+        <div class="inner-element uib_w_2 uib_sidebar leftbar bar-bg thumb-bg bar-gutter" data-uib="layout/left_sidebar" data-ver="1" data-anim="{'style':'overlap', 'v':200, 'side':'left', 'dur':200}">
+          <div class="sidebar-content content-area vertical-col">
+
+            <div class="table-view widget uib_w_5 d-margins" data-uib="ratchet/list_group" data-ver="0">
+              <li class="table-view-cell widget uib_w_6 d-margins" data-uib="ratchet/list_item" data-ver="0">Início</li>
+              <li class="table-view-cell widget uib_w_9 d-margins" data-uib="ratchet/list_item" data-ver="0">Cursos</li>
+              <li class="table-view-cell widget uib_w_7 d-margins" data-uib="ratchet/list_item" data-ver="0">Novidades</li>
+              <li class="table-view-cell widget uib_w_10 d-margins" data-uib="ratchet/list_item" data-ver="0">Aprovados</li>
+              <li class="table-view-cell widget uib_w_8 d-margins" data-uib="ratchet/list_item" data-ver="0">Eventos</li>
+              <li class="table-view-cell widget uib_w_11 d-margins" data-uib="ratchet/list_item" data-ver="0">Horários</li>
+              <li class="table-view-cell widget uib_w_12 d-margins" data-uib="ratchet/list_item" data-ver="0">Turmas</li>
+              <li class="table-view-cell widget uib_w_13 d-margins" data-uib="ratchet/list_item" data-ver="0">Editais</li>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="novidades" class="upage-content vertical-col left hidden"></div>
+      <div id="aprovados" class="upage-content vertical-col left hidden"></div>
+      <div id="eventos" class="upage-content vertical-col left hidden"></div>
+      <div id="horarios" class="upage-content vertical-col left hidden"></div>
+      <div id="turmas" class="upage-content vertical-col left hidden">
+        <div class="widget uib_w_10 d-margins" data-uib="media/text" data-ver="0">
+          <div class="widget-container left-receptacle"></div>
+          <div class="widget-container right-receptacle"></div>
+          <div>
+            <p>Turmas</p>
+          </div>
+        </div>
+      </div>
+      <div id="editais" class="upage-content vertical-col left hidden">
+        <div class="widget uib_w_11 d-margins" data-uib="media/text" data-ver="0">
+          <div class="widget-container left-receptacle"></div>
+          <div class="widget-container right-receptacle"></div>
+          <div>
+            <p>Editais</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+</html>

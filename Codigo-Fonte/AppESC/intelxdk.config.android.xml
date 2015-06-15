@@ -9,8 +9,21 @@
 <author>Intel XDK</author>
 <content src="index.html"/>
 <access origin="*"/>
+<icon platform="android" src="images/Icons/36x36.png" density="ldpi" width="36" height="36"/>
+<icon platform="android" src="images/Icons/48x48.png" density="mdpi" width="48" height="48"/>
+<icon platform="android" src="images/Icons/72x72.png" density="hdpi" width="72" height="72"/>
+<icon platform="android" src="images/Icons/96x96.png" density="xhdpi" width="96" height="96"/>
+<splash platform="android" src="images/Icons/320x426.png" density="ldpi" width="320" height="426" orientation="portrait"/>
+<splash platform="android" src="images/Icons/320x470.png" density="mdpi" width="320" height="470" orientation="portrait"/>
+<splash platform="android" src="images/Icons/480x640.png" density="hdpi" width="480" height="640" orientation="portrait"/>
+<splash platform="android" src="images/Icons/720x960.png" density="xhdpi" width="720" height="960" orientation="portrait"/>
+<splash platform="android" src="images/Icons/426x320.png" density="ldpi" width="426" height="320" orientation="landscape"/>
+<splash platform="android" src="images/Icons/470x320.png" density="mdpi" width="470" height="320" orientation="landscape"/>
+<splash platform="android" src="images/Icons/640x480.png" density="hdpi" width="640" height="480" orientation="landscape"/>
+<splash platform="android" src="images/Icons/960x720.png" density="xhdpi" width="960" height="720" orientation="landscape"/>
 <preference name="android-minSdkVersion" value="10"/>
 <preference name="android-targetSdkVersion" value="19"/>
 <preference name="android-installLocation" value="auto"/>
+<preference name="splashscreen" value="splash"/>
 <!--creationInfo:{"src":"https://appcenter.html5tools-software.intel.com/api/v2.0/redirect/projectrenderers/release-2015-ww19/webapp/templates-sidemenu-view-ad/sample.zip","projectTypeName":"com.intel.xdk.projecttype.webapp"}-->
 <preference name="debuggable" value="false"/></widget>

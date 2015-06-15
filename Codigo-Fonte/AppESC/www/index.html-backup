@@ -13,7 +13,6 @@
         </script>
         <script type="text/javascript" src="js/cursos.js"></script>
         <!--Final da referencia do script-->
-
         <link rel="stylesheet" type="text/css" href="media_button_bar/css/media_button_bar.css">
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="app_framework/2.1/css/af.ui.min.css">
@@ -100,7 +99,7 @@
         <header class="wrapping-col wrap-element uib_w_1" data-uib="app_framework/header" data-ver="2" id="cabecalho">
 
             <a class="button widget uib_w_4 d-margins icon add header-left" data-uib="app_framework/button" data-ver="1">Menu</a>
-            <h1>App ESC</h1>
+            <h1>App ESC</h1><a class="button widget uib_w_16 header-right d-margins icon close" data-uib="app_framework/button" data-ver="1">Sair</a>
 
         </header>
         <div id="content" class="uwrap">
@@ -108,21 +107,6 @@
                 <div class="upage-outer">
                     <div class="upage-content content-area vertical-col" id="inicio">
 
-                        <div class="grid grid-pad urow uib_row_1 row-height-1" data-uib="layout/row" data-ver="0">
-                            <div class="col uib_col_1 col-0_12-12" data-uib="layout/col" data-ver="0">
-                                <div class="widget-container content-area vertical-col">
-
-                                    <div class="widget uib_w_3 d-margins" data-uib="media/text" data-ver="0">
-                                        <div class="widget-container left-receptacle"></div>
-                                        <div class="widget-container right-receptacle"></div>
-                                        <div>
-                                            <p>Esta é a tela inicial do aplicativo.</p>
-                                        </div>
-                                    </div><span class="uib_shim"></span>
-                                </div>
-                            </div>
-                            <span class="uib_shim"></span>
-                        </div>
                     </div>
                     <div class="inner-element uib_w_2 uib_sidebar leftbar bar-bg thumb-bg bar-gutter" data-uib="layout/left_sidebar" data-ver="1" data-anim="{'style':'overlap', 'v':200, 'side':'left', 'dur':200}">
                         <div class="sidebar-content content-area vertical-col">
@@ -144,13 +128,16 @@
                                 </li>
                                 <li class="widget uib_w_13" data-uib="app_framework/listitem" data-ver="1"><a class="icon stack">Editais</a>
                                 </li>
+                                <!--Teste do php-->
+
+                                <!--Fim do teste do php-->
 
                             </ul>
                         </div>
                     </div>
                 </div>
 
-                <div id="cursos" class="upage-content vertical-col hidden">
+                <div id="cursos" class="upage-content hidden vertical-col">
                     <div class="grid grid-pad urow uib_row_1 row-height-1" data-uib="layout/row" data-ver="0">
                         <div class="col uib_col_1 col-0_12-12" data-uib="layout/col" data-ver="0">
                             <div class="widget-container content-area vertical-col">
@@ -159,7 +146,7 @@
                                     <div class="widget-container left-receptacle"></div>
                                     <div class="widget-container right-receptacle"></div>
                                     <div>
-                                        <p>Cursos</p><br/>
+                                        <p>Cursos</p>
                                     </div>
                                     <div id="resultado"></div>
                                 </div><span class="uib_shim"></span>
@@ -168,7 +155,7 @@
                         <span class="uib_shim"></span>
                     </div>
                 </div>
-                <div id="novidades" class="upage-content vertical-col hidden">
+                <div id="novidades" class="upage-content hidden vertical-col">
                     <div class="widget uib_w_10 d-margins" data-uib="media/text" data-ver="0">
                         <div class="widget-container left-receptacle"></div>
                         <div class="widget-container right-receptacle"></div>
@@ -177,7 +164,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="aprovados" class="upage-content vertical-col hidden">
+                <div id="aprovados" class="upage-content hidden vertical-col">
                     <div class="widget uib_w_11 d-margins" data-uib="media/text" data-ver="0">
                         <div class="widget-container left-receptacle"></div>
                         <div class="widget-container right-receptacle"></div>
@@ -186,7 +173,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="eventos" class="upage-content vertical-col hidden">
+                <div id="eventos" class="upage-content hidden vertical-col">
                     <div class="widget uib_w_12 d-margins" data-uib="media/text" data-ver="0">
                         <div class="widget-container left-receptacle"></div>
                         <div class="widget-container right-receptacle"></div>
@@ -195,7 +182,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="horarios" class="upage-content vertical-col hidden">
+                <div id="horarios" class="upage-content hidden vertical-col">
                     <div class="widget uib_w_13 d-margins" data-uib="media/text" data-ver="0">
                         <div class="widget-container left-receptacle"></div>
                         <div class="widget-container right-receptacle"></div>
@@ -204,7 +191,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="turmas" class="upage-content vertical-col hidden">
+                <div id="turmas" class="upage-content hidden vertical-col">
                     <div class="widget uib_w_14 d-margins" data-uib="media/text" data-ver="0">
                         <div class="widget-container left-receptacle"></div>
                         <div class="widget-container right-receptacle"></div>
@@ -213,7 +200,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="editais" class="upage-content vertical-col hidden">
+                <div id="editais" class="upage-content hidden vertical-col">
                     <div class="widget uib_w_15 d-margins" data-uib="media/text" data-ver="0">
                         <div class="widget-container left-receptacle"></div>
                         <div class="widget-container right-receptacle"></div>

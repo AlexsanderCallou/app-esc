@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link rel="stylesheet" type="text/css" href="ionic/css/ionic.min.css">
+    <link rel="stylesheet" type="text/css" href="css/index_main.less.css" class="main-less">
+    <link rel="stylesheet" type="text/css" href="media_button_bar/css/media_button_bar.css">
+    <link rel="stylesheet" type="text/css" href="app_framework/2.1/css/icons.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
+    <script src="intelxdk.js"></script>
+    <script src="cordova.js"></script>
+    <script src="xhr.js"></script>
+    <script src="xdk/init-dev.js"></script>
+    <script type="application/javascript" src="ionic/js/ionic.bundle.js"></script>
+    <script type="application/javascript" src="lib/jquery.min.js"></script>
+    <script type="application/javascript" src="marginal/marginal-position.js"></script>
+    <script type="application/javascript" src="js/index_init_services.js"></script>
+    <script type="application/javascript" src="sidebar/js/hammer.js"></script>
+    <script type="application/javascript" src="sidebar/js/jquery.hammer.js"></script>
+    <script type="application/javascript" src="sidebar/js/swipe-hammer.js"></script>
+    <script type="application/javascript" src="sidebar/js/sidebar.js"></script>
+    <script type="application/javascript" src="http://www.google.com/jsapi"></script>
+    <script type="application/javascript" src="js/cursos.js"></script>
+    <script type="application/javascript" src="js/app.js"></script>
+    <script type="application/javascript" src="js/init-app.js"></script>
+    <script type="application/javascript" src="js/index_user_scripts.js"></script>
+    <script type="application/javascript" src="xdk/ad/af_subpage.js"></script>
+    <script type="application/javascript" src="app_framework/themeRelease.js"></script>
+  </head>
+
+  <body ng-app="myApp">
+    <div class="upage" id="mainpage">
+      <div class="upage-outer">
+        <div class="upage-content ac0 content-area vertical-col left">
+          <div class="grid grid-pad urow uib_row_1 row-height-1" data-uib="layout/row" data-ver="0">
+            <div class="col uib_col_1 col-0_12-12" data-uib="layout/col" data-ver="0">
+              <div class="widget-container content-area vertical-col left">
+
+                <div class="widget uib_w_3 d-margins" data-uib="media/text" data-ver="0">
+                  <div class="widget-container left-receptacle"></div>
+                  <div class="widget-container right-receptacle"></div>
+                  <div>
+                    <p>&nbsp;</p>
+                  </div>
+                </div><span class="uib_shim"></span>
+              </div>
+            </div>
+            <span class="uib_shim"></span>
+          </div>
+        </div>
+        <ion-header-bar class="bar inner-element uib_w_1 bar-positive bar-header" data-uib="ionic/header" data-ver="0" id="cabecalho">
+          <div class="buttons widget-container content-area horiz-area wrapping-col">
+            <button class="button widget uib_w_4 plus icon-left d-margins" data-uib="ionic/button" data-ver="0">Menu</button>
+            <button class="button widget uib_w_16 close icon-left d-margins" data-uib="ionic/button" data-ver="0">Sair</button>
+          </div>
+          <h1 class="title">Label</h1>
+          <div class="buttons widget-container content-area horiz-area wrapping-col"></div>
+        </ion-header-bar>
+        <div class="inner-element uib_w_2 uib_sidebar leftbar bar-bg thumb-bg bar-gutter" data-uib="layout/left_sidebar" data-ver="1" data-anim="{'style':'overlap', 'v':200, 'side':'left', 'dur':200}">
+          <div class="sidebar-content content-area vertical-col">
+
+            <ion-list class="widget uib_w_5 d-margins" data-uib="ionic/list" data-ver="0">
+              <ion-item class="item widget uib_w_6 d-margins" data-uib="ionic/list_item" data-ver="0">Início</ion-item>
+              <ion-item class="item widget uib_w_9 d-margins" data-uib="ionic/list_item" data-ver="0">Cursos</ion-item>
+              <ion-item class="item widget uib_w_7 d-margins" data-uib="ionic/list_item" data-ver="0">Novidades</ion-item>
+              <ion-item class="item widget uib_w_10 d-margins" data-uib="ionic/list_item" data-ver="0">Aprovados</ion-item>
+              <ion-item class="item widget uib_w_8 d-margins" data-uib="ionic/list_item" data-ver="0">Eventos</ion-item>
+              <ion-item class="item widget uib_w_11 d-margins" data-uib="ionic/list_item" data-ver="0">Horários</ion-item>
+              <ion-item class="item widget uib_w_12 d-margins" data-uib="ionic/list_item" data-ver="0">Turmas</ion-item>
+              <ion-item class="item widget uib_w_13 d-margins" data-uib="ionic/list_item" data-ver="0">Editais</ion-item>
+            </ion-list>
+          </div>
+        </div>
+      </div>
+      <div id="novidades" class="upage-content vertical-col left hidden"></div>
+      <div id="aprovados" class="upage-content vertical-col left hidden"></div>
+      <div id="eventos" class="upage-content vertical-col left hidden"></div>
+      <div id="horarios" class="upage-content vertical-col left hidden"></div>
+      <div id="turmas" class="upage-content vertical-col left hidden"></div>
+      <div id="editais" class="upage-content vertical-col left hidden"></div>
+    </div>
+  </body>
+
+</html>

@@ -8,14 +8,17 @@ function json(){
 		$('#resultado').html('Carregando dados...');
 
 		// Estrutura de resultado.
-		$.getJSON('http://marcosmatiasti.atspace.cc/cursos.json', function(data){
-			this.qtd = data.cursos.length;
+		$.getJSON('http://marcosmatiasti.atspace.cc/CRUD/jsons/cadCusos.json', function(data){
+			this.qtd = data.length;
 			this.retorno = '';
 
 			for (i = 0; i < this.qtd; i++){
-				this.retorno += '<h1>' + data.cursos[i].titulo + '</h1>';
-				this.retorno += '<p>Ano: ' + data.cursos[i].ano + '</p>';
-				this.retorno += '<p>' + data.cursos[i].conteudo + '</p><br />';
+				this.retorno += '<h1>' + data[i].titulo + '</h1>';
+				this.retorno += '<p>Data: ' + data[i].data + '</p>';
+				this.retorno += '<img id="imagem" src="' + data[i].urlimg + '"/>';
+                this.retorno += '<p>' + data[i].conteudo + '</p>';
+                this.retorno += '<a href="' + data[i].urllink + '">Veja mais</a>';
+                this.retorno += '<p>Categoria: ' + data[i].categoria + '</p><br/><hr/><br/>';
 			}
 
 			$('#resultado').html(this.retorno);
