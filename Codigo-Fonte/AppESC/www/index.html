@@ -12,6 +12,10 @@
             google.load("jquery", "1.3.2", {uncompressed:true});
         </script>
         <script type="text/javascript" src="js/cursos.js"></script>
+        <script type="text/javascript" src="js/aprovados.js"></script>
+        <script type="text/javascript" src="js/editais.js"></script>
+        <script type="text/javascript" src="js/eventos.js"></script>
+        <script type="text/javascript" src="js/novidades.js"></script>
         <!--Final da referencia do script-->
 
         <link rel="stylesheet" type="text/css" href="media_button_bar/css/media_button_bar.css">
@@ -124,12 +128,12 @@
                             <span class="uib_shim"></span>
                         </div>
                     </div>
-                    <div class="inner-element uib_w_2 uib_sidebar leftbar bar-bg thumb-bg bar-gutter" data-uib="layout/left_sidebar" data-ver="1" data-anim="{'style':'overlap', 'v':200, 'side':'left', 'dur':200}">
+                    <div class="inner-element uib_w_2 uib_sidebar leftbar bar-bg thumb-bg bar-gutter swipe" data-uib="layout/left_sidebar" data-ver="1" data-anim="{'style':'overlap', 'v':200, 'side':'left', 'dur':200}">
                         <div class="sidebar-content content-area vertical-col">
 
                             <ul class="list widget uib_w_5 d-margins" data-uib="app_framework/listview" data-ver="1">
-                                <li class="widget uib_w_6" data-uib="app_framework/listitem" data-ver="1"><a class="icon home">Início</a>
-                                </li>
+                                <!-- <li class="widget uib_w_6" data-uib="app_framework/listitem" data-ver="1"><a class="icon home">Início</a>
+                                </li>-->
                                 <li class="widget uib_w_9" data-uib="app_framework/listitem" data-ver="1"><a class="icon graph">Cursos</a>
                                 </li>
                                 <li class="widget uib_w_7" data-uib="app_framework/listitem" data-ver="1"><a class="icon new">Novidades</a>
@@ -144,6 +148,8 @@
                                 </li>
                                 <li class="widget uib_w_13" data-uib="app_framework/listitem" data-ver="1"><a class="icon stack">Editais</a>
                                 </li>
+                                <!--<li class="widget uib_w_14" data-uib="app_framework/listitem" data-ver="1"><a class="icon close">Sair</a>
+                                </li>-->
 
                             </ul>
                         </div>
@@ -163,7 +169,6 @@
                                         <br>
                                     </div>
                                     <div id="resultado">
-
                                     </div>
                                 </div><span class="uib_shim"></span>
                             </div>
@@ -177,6 +182,9 @@
                         <div class="widget-container right-receptacle"></div>
                         <div>
                             <p>Novidades</p>
+                            </div>
+                                <div id="resultadoNovidades">
+                                </div>
                         </div>
                     </div>
                 </div>
@@ -186,6 +194,9 @@
                         <div class="widget-container right-receptacle"></div>
                         <div>
                             <p>Aprovados</p>
+                            </div>
+                                    <div id="resultadoAprovados">
+                                    </div>
                         </div>
                     </div>
                 </div>
@@ -195,6 +206,9 @@
                         <div class="widget-container right-receptacle"></div>
                         <div>
                             <p>Eventos</p>
+                            </div>
+                                    <div id="resultadoEventos">
+                                    </div>
                         </div>
                     </div>
                 </div>
@@ -204,6 +218,7 @@
                         <div class="widget-container right-receptacle"></div>
                         <div>
                             <p>Horários</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -222,6 +237,9 @@
                         <div class="widget-container right-receptacle"></div>
                         <div>
                             <p>Editais</p>
+                            </div>
+                                    <div id="resultadoEditais">
+                                    </div>
                         </div>
                     </div>
                 </div>

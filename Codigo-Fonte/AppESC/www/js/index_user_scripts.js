@@ -189,6 +189,13 @@
             window.location="index.html";
     });
     
+        /* listitem  Sair */
+    $(document).on("click", ".uib_w_14", function(evt)
+    {
+        /* your code goes here */ 
+        navigator.app.exitApp();
+    });
+    
     }
  document.addEventListener("app.Ready", register_event_handlers, false);
 })();

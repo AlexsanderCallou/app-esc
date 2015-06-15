@@ -5,7 +5,7 @@ function json(){
 
 	// Resgatar valores.
 	json.prototype.resgatarValores = function(){
-		$('#resultado').html('Carregando dados...');
+		$('#resultadoNovidades').html('Carregando dados...');
 
 		// Estrutura de resultado.
 		$.getJSON('http://marcosmatiasti.atspace.cc/CRUD/jsons/cadCursos.json', function(data){
