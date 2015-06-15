@@ -181,6 +181,14 @@
         uib_sb.close_all_sidebars();
     });
     
+        /* button  Atualizar */
+    $(document).on("click", ".uib_w_16", function(evt)
+    {
+        /* your code goes here */ 
+            
+            window.location="index.html";
+    });
+    
     }
  document.addEventListener("app.Ready", register_event_handlers, false);
 })();

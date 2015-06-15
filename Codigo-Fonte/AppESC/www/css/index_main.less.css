@@ -400,3 +400,11 @@ body:not(#afui) .upage-outer {
     min-height: 100px;
   }
 }
+.uib-button-bar .d-margins {
+  margin: 0;
+}
+@media all {
+  #afui .default-button-bar-height {
+    height: 200px;
+  }
+}
