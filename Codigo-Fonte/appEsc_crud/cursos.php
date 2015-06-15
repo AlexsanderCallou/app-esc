@@ -55,7 +55,8 @@ require_once 'crud.php';
         <?php
         require_once 'form.php';
         ?>
-        <h1 style="text-align: right;">Cusos</h1>
+        <span style="text-align: right;" class="label label-primary">Primary</span>
+        <h1 class="ide">Cusos</h1><br>
         <table border="1" id="tableVisualizar">
             <thead>
                 <tr>
@@ -66,13 +67,13 @@ require_once 'crud.php';
                         Data
                     </th>
                     <th>
-                        urlimg
+                        url Img
                     </th>
                     <th>
                         Conteudo
                     </th>
                     <th>
-                    	urllink
+                    	url Link
                     </th>
                     <th>
                     	categoria
@@ -106,20 +107,28 @@ require_once 'crud.php';
                                 <?php echo $campo['categoria']; // mostrando o campo NOME da tabela ?>
                             </td>
                             <td>
+                                <button type="button" class="btn btn-default" aria-label="Left Align">
+                                   <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
                                 <a href="cursos.php?id=<?php echo $campo['id']; //pega o campo ID para a ediçao ?>">
                                     Editar
                                 </a>
+                            </button>
                             </td>
                             <td>
-                                <a href="excluirCurso.php?id=<?php echo $campo['id'];  //pega o campo ID para a exclusao ?>">
+                                <button type="button" class="btn btn-default" aria-label="Left Align">
+                                    <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+                                    <a href="excluirCurso.php?id=<?php echo $campo['id'];  //pega o campo ID para a exclusao ?>">
                                     Excluir
                                 </a>
+                                </button>
+                                
                             </td>
                         </tr>
                         <?php } ?>
                     </tbody>
                 </table>
                 <br>
-                <a href="wsCursos.php" id="formCadastro">gerar json</a>
+
+                <a href="wsCursos.php" class="button2">Gerar json</a>
             </body>
             </html>
