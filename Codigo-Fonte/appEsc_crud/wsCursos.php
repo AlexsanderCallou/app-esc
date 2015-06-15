@@ -18,7 +18,7 @@ while($r = mysql_fetch_assoc($sth)) {
 
 echo json_encode( array ("cursos" => $rows));
 
-$fi=fopen($_POST ['json']."jsons/cadCusos.json", "w") or die("erro");
+$fi=fopen($_POST ['json']."jsons/cadCursos.json", "w") or die("erro");
 
 fwrite($fi, json_encode($rows));
 
