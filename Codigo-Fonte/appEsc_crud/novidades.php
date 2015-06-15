@@ -54,7 +54,8 @@ require_once 'crud.php';
 <?php
 require_once 'form.php';
 ?>
-        <h1 style="text-align: right;">Novidades</h1>
+        <span style="text-align: right;" class="label label-primary">Primary</span>
+        <h1 class="ide">Novidades</h1><br>
          <table border="1" id="tableVisualizar">
             <thead>
                 <tr>
@@ -105,19 +106,26 @@ require_once 'form.php';
                             <?php echo $campo['categoria']; // mostrando o campo NOME da tabela ?>
                         </td>
                         <td>
-                            <a href="novidades.php?id=<?php echo $campo['id']; //pega o campo ID para a ediçao ?>">
-                                Editar
-                            </a>
-                        </td>
-                        <td>
-                            <a href="excluirNovidades.php?id=<?php echo $campo['id'];  //pega o campo ID para a exclusao ?>">
-                                Excluir
-                            </a>
+                            <button type="button" class="btn btn-default" aria-label="Left Align">
+                                   <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
+                                <a href="novidades.php?id=<?php echo $campo['id']; //pega o campo ID para a ediçao ?>">
+                                    Editar
+                                </a>
+                            </button>
+                            </td>
+                            <td>
+                                <button type="button" class="btn btn-default" aria-label="Left Align">
+                                    <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+                                    <a href="excluirNovidades.php?id=<?php echo $campo['id'];  //pega o campo ID para a exclusao ?>">
+                                    Excluir
+                                </a>
+                                </button>
                         </td>
                     </tr>
                 <?php } ?>
          </tbody>
 </table>
- <a href="wsNovidades.php" id="formCadastro">gerar json</a>
+<br>
+ <a href="wsNovidades.php" class="button2">gerar json</a>
 </body>
 </html>

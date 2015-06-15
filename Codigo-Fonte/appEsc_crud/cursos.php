@@ -56,7 +56,7 @@ require_once 'crud.php';
         require_once 'form.php';
         ?>
         <span style="text-align: right;" class="label label-primary">Primary</span>
-        <h1 class="ide">Cusos</h1><br>
+        <h1 class="ide">Cursos</h1><br>
         <table border="1" id="tableVisualizar">
             <thead>
                 <tr>

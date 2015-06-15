@@ -14,7 +14,14 @@ while($r = mysql_fetch_assoc($sth)) {
     
 }
 print json_encode( array ("editais" => $rows));
+$fi=fopen($_POST ['json']."jsons/cadEditais.json", "w") or die("erro");
 
+fwrite($fi, json_encode($rows));
+
+fclose($fi);
+echo "Json gerado com sucesso";
+echo "<a href='editais.php'>Voltar</a>";
+?>
 
 
 ?>

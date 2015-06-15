@@ -16,14 +16,15 @@ while($r = mysql_fetch_assoc($sth)) {
     
 }
 
-//echo json_encode( array ("cursos" => $rows));
+echo json_encode( array ("cursos" => $rows));
 
 $fi=fopen($_POST ['json']."jsons/cadCusos.json", "w") or die("erro");
 
 fwrite($fi, json_encode($rows));
 
 fclose($fi);
-
+echo "Json gerado com sucesso";
+echo "<a href='cursos.php'>Voltar</a>";
 ?>
 
 <?php $con->disconnect(); // fecha conexao com o banco ?>
